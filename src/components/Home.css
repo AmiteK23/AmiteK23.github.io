@@ -1,0 +1,17 @@
+.home {
+  text-align: center;
+  padding: 0.3rem; /* Reduce padding around the home container */
+}
+
+.profile-image {
+  width: 130px; /* Slightly smaller profile picture */
+  height: 130px; /* Maintain square aspect ratio */
+  border-radius: 50%;
+  border: 3px solid #0078ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.1rem; /* Minimize space below the profile picture */
+}
+
+.Canvas {
+  margin-top: -15px; /* Further reduce gap from the canvas */
+}

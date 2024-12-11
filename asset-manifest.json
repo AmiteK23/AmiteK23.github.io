@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc3426e3.css",
-    "main.js": "/static/js/main.41978410.js",
+    "main.css": "/static/css/main.9ea24a91.css",
+    "main.js": "/static/js/main.b8e238e6.js",
     "static/js/373.7f2518dd.chunk.js": "/static/js/373.7f2518dd.chunk.js",
     "static/media/AMITEK_logo.jpg": "/static/media/AMITEK_logo.5aec25263fcf75b7f0a3.jpg",
-    "static/media/profile_pic.jpg": "/static/media/profile_pic.afc4dab939865cb09496.jpg",
+    "static/media/profile_pic.jpg": "/static/media/profile_pic.7bca81ebbaf6d66c6915.jpg",
     "index.html": "/index.html",
-    "main.fc3426e3.css.map": "/static/css/main.fc3426e3.css.map",
-    "main.41978410.js.map": "/static/js/main.41978410.js.map",
+    "main.9ea24a91.css.map": "/static/css/main.9ea24a91.css.map",
+    "main.b8e238e6.js.map": "/static/js/main.b8e238e6.js.map",
     "373.7f2518dd.chunk.js.map": "/static/js/373.7f2518dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc3426e3.css",
-    "static/js/main.41978410.js"
+    "static/css/main.9ea24a91.css",
+    "static/js/main.b8e238e6.js"
   ]
 }

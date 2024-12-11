@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7d2ea0a4.css",
+    "main.js": "/static/js/main.781071d5.js",
+    "static/js/373.7f2518dd.chunk.js": "/static/js/373.7f2518dd.chunk.js",
+    "static/media/AMITEK_logo.jpg": "/static/media/AMITEK_logo.5aec25263fcf75b7f0a3.jpg",
+    "static/media/profile_pic.jpg": "/static/media/profile_pic.e49d9edf25d534dbba9d.jpg",
+    "index.html": "/index.html",
+    "main.7d2ea0a4.css.map": "/static/css/main.7d2ea0a4.css.map",
+    "main.781071d5.js.map": "/static/js/main.781071d5.js.map",
+    "373.7f2518dd.chunk.js.map": "/static/js/373.7f2518dd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d2ea0a4.css",
+    "static/js/main.781071d5.js"
+  ]
+}

@@ -113,3 +113,17 @@
   color: #ffcc00;
   transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+}

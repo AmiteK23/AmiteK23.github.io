@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css"; // Ensure this file contains styles for the projects section
+import "./Projects.css"; // Import the external CSS file
 
 function Projects() {
   return (

@@ -6,10 +6,10 @@ function Home() {
   return (
     <div className="home">
       <img src={profileImage} alt="Profile" className="profile-image" />
-      <Canvas style={{ height: "300px", marginTop: "-10px" }}>
+      {/* Remove unnecessary margins */}
+      <Canvas style={{ height: "300px", margin: "0 auto" }}>
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
-        {/* Remove the Box component */}
       </Canvas>
     </div>
   );

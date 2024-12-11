@@ -1,11 +1,11 @@
-/* Projects Section Styling */
+/* General Styling */
 .projects {
   background: linear-gradient(135deg, #4facfe, #00f2fe);
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
-  max-width: 800px;
-  margin: 2rem auto;
+  max-width: 90%; /* Allow flexibility for smaller screens */
+  margin: 1.5rem auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   color: #ffffff;
   font-family: "Arial", sans-serif;
@@ -22,6 +22,7 @@
 .projects ul {
   list-style: none;
   padding: 0;
+  margin: 0 auto;
 }
 
 .projects li {
@@ -37,4 +38,47 @@
   background: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
   color: #ffcc00;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .projects {
+    padding: 1rem;
+    max-width: 95%; /* More flexibility for smaller screens */
+  }
+
+  .projects h2 {
+    font-size: 1.8rem;
+  }
+
+  .projects ul {
+    font-size: 1rem;
+  }
+
+  .projects li {
+    padding: 0.5rem; /* Adjust padding for smaller devices */
+  }
+}
+
+/* Media Query for Phones */
+@media (max-width: 480px) {
+  .projects {
+    padding: 0.8rem;
+    max-width: 100%; /* Utilize full screen width */
+  }
+
+  .projects h2 {
+    font-size: 1.5rem; /* Maintain readability */
+    margin-bottom: 1rem;
+  }
+
+  .projects ul {
+    font-size: 1rem; /* Keep consistent text size */
+  }
+
+  .projects li {
+    padding: 0.5rem;
+    font-size: 1rem; /* Maintain readability for list items */
+    margin: 0.4rem 0; /* Adjust spacing for tight screens */
+  }
 }

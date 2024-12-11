@@ -1,17 +1,107 @@
-.home {
+/* General Styling */
+.projects {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  padding: 2rem;
+  border-radius: 15px;
   text-align: center;
-  padding: 0.3rem; /* Reduce padding around the home container */
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
 }
 
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.projects li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  color: #ffcc00;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .projects {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .projects h2 {
+    font-size: 1.8rem;
+  }
+
+  .projects ul {
+    font-size: 1rem;
+  }
+}
+
+/* Media Query for Phones */
+@media (max-width: 480px) {
+  .projects {
+    padding: 1.2rem;
+    max-width: 95%;
+  }
+
+  .projects h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem; /* Add space to balance layout */
+  }
+
+  .projects ul {
+    font-size: 1rem;
+  }
+
+  .projects li {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 0.5rem 0; /* Ensure enough space between items */
+  }
+}
+
+/* Profile Image Styling */
 .profile-image {
-  width: 130px; /* Slightly smaller profile picture */
-  height: 130px; /* Maintain square aspect ratio */
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   border: 3px solid #0078ff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 0.1rem; /* Minimize space below the profile picture */
+  margin: 1rem auto;
+  display: block;
+  object-fit: cover;
 }
 
-.Canvas {
-  margin-top: -15px; /* Further reduce gap from the canvas */
+/* Media Queries for Profile Image */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    object-position: 15% center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 110px;
+    height: 110px;
+    object-position: 10% center;
+  }
 }

@@ -1,6 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
-import "./Contact.css"; // Ensure you have custom styling for this component
+import { Canvas, useFrame } from "@react-three/fiber";
+import { MeshWobbleMaterial, Torus } from "@react-three/drei";
+import "./Contact.css";
+
+function AnimatedLogo() {
+  const logoRef = useRef();
+
+  useFrame(({ clock }) => {
+    const time = clock.getElapsedTime();
+    if (logoRef.current) {
+      logoRef.current.rotation.x = time * 0.2;
+      logoRef.current.rotation.y = time * 0.2;
+    }
+  });
+
+  return (
+    <Torus ref={logoRef} args={[1, 0.4, 16, 100]} scale={1.5}>
+      <MeshWobbleMaterial
+        color="#0078ff"
+        attach="material"
+        speed={0.6}
+        factor={0.3}
+      />
+    </Torus>
+  );
+}
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -18,26 +43,24 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setError(""); // Reset error message
+    setError("");
 
     emailjs
       .send(
-        "service_3yblrdl", // Replace with your EmailJS service ID
-        "template_kpn0f9c", // Replace with your EmailJS template ID
+        "service_3yblrdl",
+        "template_kpn0f9c",
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        "Z0goRkPwNXWYWxv2u" // Replace with your EmailJS public key
+        "Z0goRkPwNXWYWxv2u"
       )
       .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+        () => {
           setIsSubmitted(true);
         },
-        (err) => {
-          console.error("FAILED...", err);
+        () => {
           setError("Failed to send message. Please try again later.");
         }
       );
@@ -46,6 +69,11 @@ function Contact() {
   return (
     <div id="contact" className="contact-container">
       <h2>Contact Me</h2>
+      <Canvas className="logo-canvas">
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[2, 5, 3]} />
+        <AnimatedLogo />
+      </Canvas>
       {!isSubmitted ? (
         <form onSubmit={handleSubmit} className="contact-form">
           <label>
@@ -93,10 +121,11 @@ function Contact() {
       )}
       <footer className="contact-footer">
         <img
-          src={require("C:/Users/Amit2/Desktop/Coding/Projects/my-website/src/assets/AMITEK_logo.jpg")}
+          src={require("../assets/AMITEK_logo.jpg")}
           alt="My Logo"
           className="footer-logo"
         />
+
         <div className="social-links">
           <a
             href="www.linkedin.com/in/amit-levi-538558221"

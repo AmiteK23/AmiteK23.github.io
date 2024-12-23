@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css"; // Import the external CSS file
+import "./Projects.css";
 
 function Projects() {
   return (
@@ -8,13 +8,15 @@ function Projects() {
       <ul>
         <li>Python</li>
         <li>Java</li>
-        <li>JavaScript</li>
+        <li>JavaScript, HTML, CSS</li>
+        <li>Material-UI</li>
         <li>ReactJS</li>
         <li>NodeJS</li>
+        <li>ChartJS</li>
         <li>ThreeJS</li>
-        <li>A bit of MATLAB</li>
         <li>SQL</li>
         <li>MongoDB</li>
+        <li>Wanna learn next: MATLAB</li>
       </ul>
     </div>
   );

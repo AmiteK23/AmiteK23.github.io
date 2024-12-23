@@ -1,129 +1,65 @@
-/* General Container */
 .contact-container {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
   padding: 2rem;
-  border-radius: 15px;
   text-align: center;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  border-radius: 10px;
   max-width: 700px;
-  margin: 2rem auto;
-  color: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  font-family: "Arial", sans-serif;
+  margin: 20px auto;
 }
 
-/* Form Styling */
 .contact-form label {
   display: block;
-  margin: 1rem 0;
+  margin: 10px 0;
   font-size: 1.2rem;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 90%;
-  padding: 0.8rem;
-  margin-top: 0.5rem;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button {
+  padding: 10px 20px;
   background-color: #0078ff;
   color: white;
-  padding: 0.8rem 1.5rem;
-  font-size: 1.2rem;
   border: none;
   border-radius: 5px;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
   background-color: #0056c3;
-  transform: scale(1.05);
 }
 
-.error-message {
-  color: red;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-
-/* Thank You Section */
-.thank-you {
-  font-size: 1.5rem;
-  color: #ffcc00;
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Footer Styling */
 .contact-footer {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #ddd;
-  text-align: center;
-  position: relative;
+  margin-top: 20px;
 }
 
 .footer-logo {
-  max-width: 150px;
-  margin: 0 auto 1rem;
+  width: 150px; /* Ensures the logo is not oversized */
+  height: auto; /* Keeps the aspect ratio intact */
   display: block;
-  animation: float 3s ease-in-out infinite;
+  margin: 0 auto 10px;
 }
 
-/* Floating Animation */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-/* Social Links */
 .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 
 .social-links a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
   color: #ffcc00;
-  transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-  .profile-image {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-image {
-    width: 80px;
-    height: 80px;
-  }
 }

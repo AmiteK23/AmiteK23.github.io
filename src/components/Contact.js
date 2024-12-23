@@ -128,7 +128,7 @@ function Contact() {
 
         <div className="social-links">
           <a
-            href="www.linkedin.com/in/amit-levi-538558221"
+            href="https://www.linkedin.com/in/amit-levi-538558221"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -11,12 +11,25 @@ function Projects() {
         <li>JavaScript, HTML, CSS</li>
         <li>Material-UI</li>
         <li>ReactJS</li>
+        <li>TypeScript</li>
         <li>NodeJS</li>
         <li>ChartJS</li>
         <li>ThreeJS</li>
         <li>SQL</li>
         <li>MongoDB</li>
         <li>Wanna learn next: MATLAB</li>
+      </ul>
+      <h2>Projects:</h2>
+      <ul>
+        <li>
+          <a
+            href="https://my-crypto-app-jet.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Crypto App
+          </a>
+        </li>
       </ul>
     </div>
   );
